@@ -1,0 +1,621 @@
+# AeglysAI qualification evidence (satanrayshe)
+# Upstream commit 48047e46aee115181dc0fd67a45105a0b7a45a45, unmodified. Times are UTC.
+# Sanitised: ANSI/CR stripped, paths and host name replaced, signed download query strings removed.
+# The generated local credential and deployment/docker/.local are not included.
+
+################ 00-environment
+=== 00 environment (2026-11-06T18:22:37Z)
+Ubuntu 24.04.5 LTS
+Linux 6.18.54.1-microsoft-standard-WSL2
+apt docker-buildx exit 0
+docker server 29.1.3 client 29.1.3
+Docker Compose version 2.40.3+ds1-0ubuntu1~24.04.1
+github.com/docker/buildx 0.30.1 0.30.1-0ubuntu1~24.04.1
+git version 2.43.0
+HEAD 48047e46aee115181dc0fd67a45105a0b7a45a45
+git status:
+(end status)
+
+################ 01-up
+=== 01 ./dev up (2026-11-06T18:23:29Z)
+#1 [internal] load local bake definitions
+#1 reading from stdin 983B done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from Dockerfile
+#2 transferring dockerfile: 821B done
+#2 DONE 0.1s
+
+#3 [api internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+#3 ...
+
+#4 [api internal] load metadata for mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
+#4 DONE 15.8s
+
+#3 [api internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+#3 DONE 15.8s
+
+#5 [tools internal] load .dockerignore
+#5 transferring context: 738B done
+#5 DONE 0.0s
+
+#6 [tools internal] load build context
+#6 transferring context: 1.36kB done
+#6 DONE 0.1s
+
+#7 [tools build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534 0.0s done
+#7 ...
+
+#8 [api internal] load build context
+#8 transferring context: 65.72kB 0.0s done
+#8 DONE 0.1s
+
+#7 [tools build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 resolve mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5 0.0s done
+#9 sha256:93e3f9b5dcdaebe711ce71ba37f081c65ddf4cad89900fff08bdbe416db3ea71 168B / 168B 2.8s done
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 1.05MB / 11.44MB 5.3s
+#9 sha256:0c85d6fb7176c093359bd3b55e680e6afe08d9d97e18a88073f22d01d448fa6a 0B / 3.37kB 5.1s
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 0B / 33.14MB 5.1s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 0B / 19.18MB 2.4s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 2.10MB / 11.44MB 5.7s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 3.15MB / 11.44MB 6.2s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 4.19MB / 11.44MB 6.6s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 5.24MB / 11.44MB 7.1s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 6.29MB / 11.44MB 7.5s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 7.34MB / 11.44MB 8.0s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 8.39MB / 11.44MB 8.4s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 9.44MB / 11.44MB 8.9s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 10.49MB / 11.44MB 9.5s
+#9 sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 11.44MB / 11.44MB 9.7s done
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 0.2s
+#9 sha256:0c85d6fb7176c093359bd3b55e680e6afe08d9d97e18a88073f22d01d448fa6a 0B / 3.37kB 10.2s
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 0B / 33.14MB 10.2s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 0B / 19.18MB 7.5s
+#9 sha256:0c85d6fb7176c093359bd3b55e680e6afe08d9d97e18a88073f22d01d448fa6a 3.37kB / 3.37kB 10.5s done
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 1.05MB / 19.18MB 10.1s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 2.10MB / 19.18MB 11.0s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 3.15MB / 19.18MB 11.4s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 4.19MB / 19.18MB 11.9s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 5.3s
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 0B / 33.14MB 15.3s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 5.24MB / 19.18MB 12.6s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 6.29MB / 19.18MB 13.4s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 7.34MB / 19.18MB 14.3s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 8.39MB / 19.18MB 15.2s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 9.44MB / 19.18MB 16.2s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 10.4s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 10.49MB / 19.18MB 17.4s
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 0B / 33.14MB 20.4s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 5.24MB / 17.45MB 10.2s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 11.53MB / 19.18MB 18.6s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 12.58MB / 19.18MB 19.7s
+#9 22.37 error: failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://southeastasia.data.mcr.microsoft.com/353485d638e24519ae59b2c19249e31f-vd4vgzv6do//docker/registry/v2/blobs/sha256/dd/dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3/data?<signed-query-removed>": net/http: TLS handshake timeout
+#9 22.37 retrying in 1s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 13.63MB / 19.18MB 20.7s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 14.68MB / 19.18MB 21.8s
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 0B / 33.14MB 25.5s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 15.73MB / 19.18MB 23.1s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 16.78MB / 19.18MB 24.6s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 17.83MB / 19.18MB 26.1s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 15.73MB / 17.45MB 18.3s
+#7 sha256:0849941a4061ed1fc502891fd4b122e35ce9322aa7c7e86cc765ba4a4bd07040 0B / 2.72kB 6.6s
+#7 sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 16.78MB / 17.45MB 18.6s
+#7 sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 17.45MB / 17.45MB 19.0s done
+#7 sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 17.45MB / 17.45MB 19.0s done
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 0B / 17.68MB 0.2s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 0B / 182.58MB 0.2s
+#7 sha256:0849941a4061ed1fc502891fd4b122e35ce9322aa7c7e86cc765ba4a4bd07040 2.72kB / 2.72kB 8.0s done
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 0.2s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 1.05MB / 17.68MB 2.9s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 2.10MB / 17.68MB 3.3s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 3.15MB / 17.68MB 4.7s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 4.19MB / 17.68MB 5.9s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 0B / 182.58MB 5.3s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 5.3s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 5.24MB / 17.68MB 6.6s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 6.29MB / 17.68MB 7.4s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 7.34MB / 17.68MB 8.0s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 8.39MB / 17.68MB 8.4s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 9.44MB / 17.68MB 9.0s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 2.10MB / 33.14MB 38.9s
+#9 sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 19.18MB / 19.18MB 27.3s done
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 10.49MB / 17.68MB 9.6s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 11.53MB / 17.68MB 10.1s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 12.58MB / 17.68MB 10.5s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 0B / 182.58MB 10.4s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 13.63MB / 17.68MB 11.3s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 10.4s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 14.68MB / 17.68MB 11.7s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 15.73MB / 17.68MB 12.3s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 16.78MB / 17.68MB 12.9s
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 17.68MB / 17.68MB 13.3s done
+#7 sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 17.68MB / 17.68MB 13.3s done
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 2.10MB / 182.58MB 15.5s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 15.5s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 8.39MB / 33.14MB 49.1s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 6.3s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 8.39MB / 182.58MB 20.6s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 20.6s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 13.63MB / 182.58MB 25.7s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 25.7s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 17.83MB / 33.14MB 59.3s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 16.5s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 16.78MB / 182.58MB 30.8s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 30.8s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 23.07MB / 182.58MB 35.9s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 35.9s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 26.21MB / 33.14MB 69.5s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 26.7s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 29.36MB / 182.58MB 41.0s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 41.0s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 35.65MB / 182.58MB 46.1s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 46.1s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 33.14MB / 33.14MB 75.4s done
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 36.9s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 44.04MB / 182.58MB 51.2s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 51.2s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 52.43MB / 182.58MB 56.3s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0B / 31.91MB 56.3s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 47.3s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 60.82MB / 182.58MB 61.4s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 1.05MB / 31.91MB 61.4s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 70.25MB / 182.58MB 66.5s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 2.10MB / 31.91MB 66.5s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 57.6s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 75.50MB / 182.58MB 71.6s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 2.10MB / 31.91MB 71.6s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 80.74MB / 182.58MB 76.7s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 3.15MB / 31.91MB 76.7s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 68.0s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 84.93MB / 182.58MB 81.8s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 4.19MB / 31.91MB 81.8s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 6.29MB / 31.91MB 85.5s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 91.23MB / 182.58MB 86.9s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 8.39MB / 31.91MB 88.8s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 78.3s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 10.49MB / 31.91MB 91.5s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 96.47MB / 182.58MB 92.0s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 12.58MB / 31.91MB 93.5s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 14.68MB / 31.91MB 95.1s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 101.71MB / 182.58MB 97.1s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 16.78MB / 31.91MB 96.9s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 18.87MB / 31.91MB 98.6s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 20.97MB / 31.91MB 100.1s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 88.7s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 103.81MB / 182.58MB 102.2s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 23.07MB / 31.91MB 102.9s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 25.17MB / 31.91MB 103.7s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 105.91MB / 182.58MB 107.3s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 28.31MB / 31.91MB 107.3s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 30.41MB / 31.91MB 111.6s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 99.0s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 112.20MB / 182.58MB 112.4s
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 31.91MB / 31.91MB 114.1s done
+#7 sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 31.91MB / 31.91MB 114.1s done
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 120.59MB / 182.58MB 117.5s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 130.02MB / 182.58MB 122.1s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 109.2s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 139.46MB / 182.58MB 127.1s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 148.90MB / 182.58MB 131.6s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 119.6s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 158.33MB / 182.58MB 136.1s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 167.77MB / 182.58MB 140.6s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 129.9s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 171.97MB / 182.58MB 145.7s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 176.16MB / 182.58MB 150.8s
+#7 ...
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 2.10MB / 28.25MB 140.3s
+#9 ...
+
+#7 [api build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 181.40MB / 182.58MB 155.9s
+#7 sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 182.58MB / 182.58MB 156.8s done
+#7 DONE 187.1s
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 6.29MB / 28.25MB 144.2s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 8.39MB / 28.25MB 145.2s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 10.49MB / 28.25MB 146.3s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 12.58MB / 28.25MB 147.5s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 14.68MB / 28.25MB 148.5s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 16.78MB / 28.25MB 149.7s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 18.87MB / 28.25MB 150.6s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 20.97MB / 28.25MB 151.8s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 23.07MB / 28.25MB 152.9s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 153.9s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 155.0s
+#9 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 28.25MB / 28.25MB 155.3s done
+#9 extracting sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3
+#9 extracting sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0.9s done
+#9 DONE 199.4s
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 extracting sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609
+#9 extracting sha256:88ff34f4269db778cb6a7fd2a66d831663e5cadfa722126b174ef6f3ed54a609 0.3s done
+#9 DONE 199.6s
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 extracting sha256:0c85d6fb7176c093359bd3b55e680e6afe08d9d97e18a88073f22d01d448fa6a 0.0s done
+#9 extracting sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c
+#9 extracting sha256:d3383cff8ccc735a2d40be6d83aeb4083669d786f6dca0d946c75336900ca42c 0.4s done
+#9 DONE 200.0s
+
+#9 [api api 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim@sha256:b14a41431d252c640aae69b52320e512050fc53bafcb5012b97ccb9ca173c2d5
+#9 extracting sha256:93e3f9b5dcdaebe711ce71ba37f081c65ddf4cad89900fff08bdbe416db3ea71 0.0s done
+#9 extracting sha256:e6178ed010c8740ff43fe79891bdd7b28445f9d604acd62a487fb830ea49467d 0.1s done
+#9 DONE 200.2s
+
+#7 [tools build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 extracting sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a
+#7 ...
+
+#10 [api api 2/3] WORKDIR /app
+#10 DONE 0.2s
+
+#7 [tools build 1/5] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#7 extracting sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0.8s done
+#7 extracting sha256:7907cfbe77b5f4d8dffc3e66375823f8c44060936e13afab9cfd4ef9b1765e3a 0.8s done
+#7 extracting sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0
+#7 extracting sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 2.8s done
+#7 extracting sha256:912f60dafa8006a4baf01d6790deb8b51b70c0246e811b88e398591ff361c7e0 2.8s done
+#7 extracting sha256:c06c658d32456433e67ab273804bfc8cb500c219853bcbeaf9752957a74516cf 0.1s done
+#7 extracting sha256:0849941a4061ed1fc502891fd4b122e35ce9322aa7c7e86cc765ba4a4bd07040 0.0s done
+#7 extracting sha256:0849941a4061ed1fc502891fd4b122e35ce9322aa7c7e86cc765ba4a4bd07040 0.0s done
+#7 extracting sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56
+#7 extracting sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 0.3s done
+#7 extracting sha256:f3f549f6a09cea1325ae987a18b7e4078a56256cf62f16a1e934f48b21ba8c56 0.3s done
+#7 DONE 191.1s
+
+#11 [api build 2/5] WORKDIR /source
+#11 DONE 0.2s
+
+#12 [tools tools 2/3] RUN apt-get update && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+#12 ...
+
+#13 [api build 3/5] COPY global.json AeglysAI.sln ./
+#13 DONE 0.0s
+
+#14 [api build 4/5] COPY src/ src/
+#14 DONE 0.1s
+
+#15 [api build 5/5] RUN dotnet publish src/AeglysAI.Api/AeglysAI.Api.csproj -c Release -o /publish
+#15 0.896   Determining projects to restore...
+#15 1.602   Restored /source/src/AeglysAI.Domain/AeglysAI.Domain.csproj (in 78 ms).
+#15 1.602   Restored /source/src/AeglysAI.Infrastructure/AeglysAI.Infrastructure.csproj (in 88 ms).
+#15 1.602   Restored /source/src/AeglysAI.Application/AeglysAI.Application.csproj (in 88 ms).
+#15 ...
+
+#12 [tools tools 2/3] RUN apt-get update && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+#12 5.475 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#12 7.503 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#12 9.014 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#12 10.43 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#12 15.52 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#12 16.11 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [361 kB]
+#12 16.31 Fetched 9400 kB in 16s (601 kB/s)
+#12 16.31 Reading package lists...
+#12 16.62 Reading package lists...
+#12 16.93 Building dependency tree...
+#12 17.00 Reading state information...
+#12 17.08 git is already the newest version (1:2.39.5-0+deb12u3).
+#12 17.08 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#12 DONE 17.1s
+
+#16 [tools tools 3/3] COPY deployment/docker/tools-entrypoint.sh /tools-entrypoint.sh
+#16 DONE 0.0s
+
+#17 [tools] exporting to image
+#17 exporting layers 0.1s done
+#17 exporting manifest sha256:8f841c29278c6faa6fd8995cf5735a73f79731745078c34a59b6e8f33e08919e 0.0s done
+#17 exporting config sha256:100fe56ed37dd08998ac7550127bfbbd1e54c211e83eff9287aae163764426c7 0.0s done
+#17 exporting attestation manifest sha256:a58dd04de457ae5b6e57f569c6bb43675ae78451a981dd325e911227c4f07f12 0.0s done
+#17 exporting manifest list sha256:dcc9f56fcf228cbcf4de482136efc52814379b2ffd20ebb76b93fa0ffd7f2b55 0.0s done
+#17 naming to docker.io/library/aegisai-local-tools:latest done
+#17 unpacking to docker.io/library/aegisai-local-tools:latest 0.0s done
+#17 DONE 0.3s
+
+#18 [tools] resolving provenance for metadata file
+#18 DONE 0.0s
+
+#15 [api build 5/5] RUN dotnet publish src/AeglysAI.Api/AeglysAI.Api.csproj -c Release -o /publish
+#15 60.42   Restored /source/src/AeglysAI.Api/AeglysAI.Api.csproj (in 58.91 sec).
+#15 62.33   AeglysAI.Domain -> /source/src/AeglysAI.Domain/bin/Release/net8.0/AeglysAI.Domain.dll
+#15 62.55   AeglysAI.Application -> /source/src/AeglysAI.Application/bin/Release/net8.0/AeglysAI.Application.dll
+#15 62.77   AeglysAI.Infrastructure -> /source/src/AeglysAI.Infrastructure/bin/Release/net8.0/AeglysAI.Infrastructure.dll
+#15 63.47   AeglysAI.Api -> /source/src/AeglysAI.Api/bin/Release/net8.0/AeglysAI.Api.dll
+#15 63.51   AeglysAI.Api -> /publish/
+#15 DONE 63.6s
+
+#19 [api api 3/3] COPY --from=build /publish ./
+#19 DONE 0.0s
+
+#20 [api] exporting to image
+#20 exporting layers 0.1s done
+#20 exporting manifest sha256:b28934993607ae641e276053693ad609909ef289b52aa6f7145699279f82cbbb 0.0s done
+#20 exporting config sha256:e7cbe87ddae89d87360a0ef59b07d2712d99902912e13bc956702aa5eb47e257 0.0s done
+#20 exporting attestation manifest sha256:d62040549369e345de556d6e90c4468f39d552f03e0e3a7497090c3b8c60fde9 0.0s done
+#20 exporting manifest list sha256:171b2e9131b0f8ce5ba9f77e95048cb77e7bccd39bec77b6fd600ec6091928a7 0.0s done
+#20 naming to docker.io/library/aegisai-local-api:latest done
+#20 unpacking to docker.io/library/aegisai-local-api:latest 0.0s done
+#20 DONE 0.2s
+
+#21 [api] resolving provenance for metadata file
+#21 DONE 0.0s
+ aegisai-local-tools  Built
+ aegisai-local-api  Built
+ Network aegisai-local_default  Creating
+ Network aegisai-local_default  Created
+Generated synthetic local trust and a one-hour credential. Private key discarded; credential not printed.
+ Container aegisai-local-api-1  Creating
+ Container aegisai-local-api-1  Created
+ Container aegisai-local-api-1  Starting
+ Container aegisai-local-api-1  Started
+{"status":"healthy"}
+EXIT 0
+
+################ 02-health-demo
+=== 02 ./dev health (2026-11-06T18:28:23Z)
+{"status":"healthy"}
+EXIT 0
+=== 02 ./dev demo (2026-11-06T18:28:27Z)
+{"status":"healthy"}
+Correlation: 42a529d3ff4c469fb54f9b27eb761104
+{"model":"A","outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v1","resource":"reports","action":"read"}
+Correlation: cbf05cc20a824184b7da1fef86e0db8e
+{"model":"B","outcome":"ALLOW","resource":"reports","action":"read","rbac":{"outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v1"},"abac":{"outcome":"ALLOW","reason":"ConditionsSatisfied","snapshotVersion":"example-model-b-v1"}}
+Correlation: 6fcf8d50e8d34f06ac4ffa957500de23
+{"model":"C","outcome":"STEP_UP","reason":"AdditionalAssuranceRequired","resource":"reports","action":"read","rbac":{"outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v1"},"abac":{"outcome":"ALLOW","reason":"ConditionsSatisfied","snapshotVersion":"example-model-b-v1"},"risk":{"score":0.300,"level":"Medium","algorithmVersion":"contextual-weighted-v1","contextVersion":"simulated-context-v1","contributions":[{"signal":"AuthenticationWeakness","value":0,"weight":0.25,"contribution":0.00,"reason":"ConfiguredIndicator"},{"signal":"ResourceSensitivity","value":0.5,"weight":0.25,"contribution":0.125,"reason":"ConfiguredIndicator"},{"signal":"OperationSensitivity","value":0.5,"weight":0.20,"contribution":0.100,"reason":"ConfiguredIndicator"},{"signal":"NetworkExposure","value":0.5,"weight":0.15,"contribution":0.075,"reason":"ConfiguredIndicator"},{"signal":"DeviceExposure","value":0,"weight":0.15,"contribution":0.00,"reason":"ConfiguredIndicator"}]},"obligation":{"code":"VerifyStrongerAuthenticationAndReevaluate","maximumRequestsPerMinute":null}}
+{"model":"A","outcome":"DENY","reason":"NoMatchingPermission","policyVersion":"example-model-a-v1","resource":"reports","action":"write"}
+EXIT 0
+
+################ 03-audit-lines
+=== 03 AuthorizationDecision audit lines from the api container (first ./dev demo)
+AuthorizationDecision 3cf52e88b4424133b8d9ee2b10f16a16 e5f3304b56a941999ec22f98062876ba e638fed0c4fe1468f63412fde6852690 c9e9c18ca57bfb27 sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:70b4c8a6d56c29c4d2e035826915654ebcc299d3d63c63fa8ae8d05cf2a1de3c A DENY (null) (null) NoMatchingPermission 11/06/2026 18:28:30 \u002B00:00 0.0108
+AuthorizationDecision 3fed1b8916304368a1622b60ebfe9edc cbf05cc20a824184b7da1fef86e0db8e 104eacfec8b0fd0e2ec3092a2cc7f8a7 64ac95167d73c3e9 sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:4c86391b184667b23dc682581324b76766d58a10d62094cc3a55415cf5b11df9 B ALLOW (null) (null) PermissionGranted,ConditionsSatisfied 11/06/2026 18:28:30 \u002B00:00 1.1001
+AuthorizationDecision 51be1aa59d6f4a779ccb720500ca5959 42a529d3ff4c469fb54f9b27eb761104 5e4283ccd68055354805d4b63807be32 92c153f341a079be sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:4c86391b184667b23dc682581324b76766d58a10d62094cc3a55415cf5b11df9 A ALLOW (null) (null) PermissionGranted 11/06/2026 18:28:30 \u002B00:00 0.6388
+AuthorizationDecision a7163a2f244d4249b3a46d4440e81de9 6fcf8d50e8d34f06ac4ffa957500de23 13b9128d5b9b4359b80985eab56292b1 1eb54dd3cbaac5c7 sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:4c86391b184667b23dc682581324b76766d58a10d62094cc3a55415cf5b11df9 C STEP_UP 0.300 Medium PermissionGranted,ConditionsSatisfied,AdditionalAssuranceRequired 11/06/2026 18:28:30 \u002B00:00 3.4195
+--- correlation IDs printed by ./dev demo, and whether each appears in an audit line:
+42a529d3ff4c469fb54f9b27eb761104 matched
+cbf05cc20a824184b7da1fef86e0db8e matched
+6fcf8d50e8d34f06ac4ffa957500de23 matched
+--- version labels inside AuthorizationDecision lines (expect none):
+0
+
+################ 04-version-check
+=== 04 version check: change RBAC policy version label v1 -> v2 in the generated local Development config only (2026-11-06T18:29:43Z)
+"Version":"example-model-a-v1"
+"Version":"example-model-a-v2"
+ Container aegisai-local-api-1  Recreate
+ Container aegisai-local-api-1  Recreated
+ Container aegisai-local-api-1  Starting
+ Container aegisai-local-api-1  Started
+=== 04 ./dev health (2026-11-06T18:29:48Z)
+{"status":"healthy"}
+EXIT 0
+=== 04 ./dev demo (after v2 change) (2026-11-06T18:29:51Z)
+{"status":"healthy"}
+Correlation: d4ac89e04f4b4fac9a424fd45bceb87a
+{"model":"A","outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v2","resource":"reports","action":"read"}
+Correlation: 9d842fe603a24a2eb90bdbd2a4b019e7
+{"model":"B","outcome":"ALLOW","resource":"reports","action":"read","rbac":{"outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v2"},"abac":{"outcome":"ALLOW","reason":"ConditionsSatisfied","snapshotVersion":"example-model-b-v1"}}
+Correlation: 9b97b084d03f4275ac47d99029660ce0
+{"model":"C","outcome":"STEP_UP","reason":"AdditionalAssuranceRequired","resource":"reports","action":"read","rbac":{"outcome":"ALLOW","reason":"PermissionGranted","policyVersion":"example-model-a-v2"},"abac":{"outcome":"ALLOW","reason":"ConditionsSatisfied","snapshotVersion":"example-model-b-v1"},"risk":{"score":0.300,"level":"Medium","algorithmVersion":"contextual-weighted-v1","contextVersion":"simulated-context-v1","contributions":[{"signal":"AuthenticationWeakness","value":0,"weight":0.25,"contribution":0.00,"reason":"ConfiguredIndicator"},{"signal":"ResourceSensitivity","value":0.5,"weight":0.25,"contribution":0.125,"reason":"ConfiguredIndicator"},{"signal":"OperationSensitivity","value":0.5,"weight":0.20,"contribution":0.100,"reason":"ConfiguredIndicator"},{"signal":"NetworkExposure","value":0.5,"weight":0.15,"contribution":0.075,"reason":"ConfiguredIndicator"},{"signal":"DeviceExposure","value":0,"weight":0.15,"contribution":0.00,"reason":"ConfiguredIndicator"}]},"obligation":{"code":"VerifyStrongerAuthenticationAndReevaluate","maximumRequestsPerMinute":null}}
+{"model":"A","outcome":"DENY","reason":"NoMatchingPermission","policyVersion":"example-model-a-v2","resource":"reports","action":"write"}
+EXIT 0
+=== 04 AuthorizationDecision lines after the change (2026-11-06T18:29:56Z)
+"Message":"AuthorizationDecision f3d3cf8f5b6345c7bacbbd20f79a329f d4ac89e04f4b4fac9a424fd45bceb87a d71b4bc71dd1a50fda8b98eadc6cd805 0ce0f853d329335b sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:4c86391b184667b23dc682581324b76766d58a10d62094cc3a55415cf5b11df9 A ALLOW (null) (null) PermissionGranted 11/06/2026 18:29:53 \u002B00:00 0.6031"
+"Message":"AuthorizationDecision 0ff170f4fbe54c6293fc7689eafd623d 9d842fe603a24a2eb90bdbd2a4b019e7 8d35759d0eb3eed7a29794953d6eb557 02b5c061a449ae10 sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:4c86391b184667b23dc682581324b76766d58a10d62094cc3a55415cf5b11df9 B ALLOW (null) (null) PermissionGranted,ConditionsSatisfied 11/06/2026 18:29:53 \u002B00:00 1.1548"
+"Message":"AuthorizationDecision 2b5b938a16ab4b23bbc0a6fa1a8415f2 9b97b084d03f4275ac47d99029660ce0 0963958832b31e3fc89fd668c544bbea b82d26f72895e89b sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:4c86391b184667b23dc682581324b76766d58a10d62094cc3a55415cf5b11df9 C STEP_UP 0.300 Medium PermissionGranted,ConditionsSatisfied,AdditionalAssuranceRequired 11/06/2026 18:29:53 \u002B00:00 3.3278"
+"Message":"AuthorizationDecision 7196b7dcd4dc456486cb3b9f43a8b3b4 a775cad97fe848ce88308b941a23be26 302c35b61b8cd8bbbd96b2f27d809b80 691d0e70f7f9aac6 sha256:e11a4b728f8a3dcc6c7811fa9804d16dfad3864bab217673ffbf2256834ce9d8 sha256:1bf2af23a41d406c0cc456ab4f49d74bc8d5f890bffa9effb131da9821ab7d3c sha256:70b4c8a6d56c29c4d2e035826915654ebcc299d3d63c63fa8ae8d05cf2a1de3c A DENY (null) (null) NoMatchingPermission 11/06/2026 18:29:53 \u002B00:00 0.0132"
+
+################ 05-test
+=== 05 ./dev test (2026-11-06T18:29:56Z)
+#1 [internal] load local bake definitions
+#1 reading from stdin 540B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 821B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim
+#3 DONE 6.3s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 738B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 1.36kB done
+#5 DONE 0.0s
+
+#6 [tools 1/3] FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534
+#6 resolve mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim@sha256:341aa6e8bbaceb1194732328ca27c15bfa9c531687db83a66af3c0c1833f5534 0.0s done
+#6 DONE 0.0s
+
+#7 [tools 2/3] RUN apt-get update && apt-get install -y --no-install-recommends git     && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [tools 3/3] COPY deployment/docker/tools-entrypoint.sh /tools-entrypoint.sh
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers done
+#9 exporting manifest sha256:8f841c29278c6faa6fd8995cf5735a73f79731745078c34a59b6e8f33e08919e done
+#9 exporting config sha256:100fe56ed37dd08998ac7550127bfbbd1e54c211e83eff9287aae163764426c7 done
+#9 exporting attestation manifest sha256:3e707be444bcc8bdead5595affbe3238f4d433fe6e407a71d0f4f0212382a0c8 0.0s done
+#9 exporting manifest list sha256:32fa8e0a0e2d1f7be4385feaaa1d00e7f554bfa36ab730d92b0daf80bfc396a3 done
+#9 naming to docker.io/library/aegisai-local-tools:latest done
+#9 unpacking to docker.io/library/aegisai-local-tools:latest done
+#9 DONE 0.1s
+
+#10 resolving provenance for metadata file
+#10 DONE 0.0s
+ aegisai-local-tools  Built
+  Determining projects to restore...
+  Restored /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Infrastructure/AeglysAI.Infrastructure.csproj (in 85 ms).
+  Restored /tmp/tmp.o7rr5QgHeS/deployment/docker/AeglysAI.DevTools/AeglysAI.DevTools.csproj (in 80 ms).
+  Restored /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Domain/AeglysAI.Domain.csproj (in 80 ms).
+  Restored /tmp/tmp.o7rr5QgHeS/benchmarks/AeglysAI.Experiments/AeglysAI.Experiments.csproj (in 85 ms).
+  Restored /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Application/AeglysAI.Application.csproj (in 85 ms).
+  Restored /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Api/AeglysAI.Api.csproj (in 1.2 min).
+  Restored /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Domain.Tests/AeglysAI.Domain.Tests.csproj (in 2.94 min).
+  Restored /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Application.Tests/AeglysAI.Application.Tests.csproj (in 2.94 min).
+  Restored /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Experiments.Tests/AeglysAI.Experiments.Tests.csproj (in 2.94 min).
+  Restored /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.ArchitectureTests/AeglysAI.ArchitectureTests.csproj (in 2.94 min).
+  Restored /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.IntegrationTests/AeglysAI.IntegrationTests.csproj (in 3.06 min).
+  AeglysAI.Domain -> /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Domain/bin/Release/net8.0/AeglysAI.Domain.dll
+  AeglysAI.ArchitectureTests -> /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.ArchitectureTests/bin/Release/net8.0/AeglysAI.ArchitectureTests.dll
+Test run for /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.ArchitectureTests/bin/Release/net8.0/AeglysAI.ArchitectureTests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+  AeglysAI.Application -> /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Application/bin/Release/net8.0/AeglysAI.Application.dll
+  AeglysAI.Domain.Tests -> /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Domain.Tests/bin/Release/net8.0/AeglysAI.Domain.Tests.dll
+Test run for /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Domain.Tests/bin/Release/net8.0/AeglysAI.Domain.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+  AeglysAI.Infrastructure -> /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Infrastructure/bin/Release/net8.0/AeglysAI.Infrastructure.dll
+  AeglysAI.Application.Tests -> /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Application.Tests/bin/Release/net8.0/AeglysAI.Application.Tests.dll
+
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 3 ms - AeglysAI.ArchitectureTests.dll (net8.0)
+Test run for /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Application.Tests/bin/Release/net8.0/AeglysAI.Application.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 29 ms - AeglysAI.Domain.Tests.dll (net8.0)
+  AeglysAI.Experiments -> /tmp/tmp.o7rr5QgHeS/benchmarks/AeglysAI.Experiments/bin/Release/net8.0/AeglysAI.Experiments.dll
+  AeglysAI.Api -> /tmp/tmp.o7rr5QgHeS/src/AeglysAI.Api/bin/Release/net8.0/AeglysAI.Api.dll
+
+Passed!  - Failed:     0, Passed:    53, Skipped:     0, Total:    53, Duration: 45 ms - AeglysAI.Application.Tests.dll (net8.0)
+  AeglysAI.Experiments.Tests -> /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Experiments.Tests/bin/Release/net8.0/AeglysAI.Experiments.Tests.dll
+Test run for /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.Experiments.Tests/bin/Release/net8.0/AeglysAI.Experiments.Tests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+  AeglysAI.IntegrationTests -> /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.IntegrationTests/bin/Release/net8.0/AeglysAI.IntegrationTests.dll
+Test run for /tmp/tmp.o7rr5QgHeS/tests/AeglysAI.IntegrationTests/bin/Release/net8.0/AeglysAI.IntegrationTests.dll (.NETCoreApp,Version=v8.0)
+VSTest version 17.11.1 (x64)
+
+
+Passed!  - Failed:     0, Passed:     4, Skipped:     0, Total:     4, Duration: 28 ms - AeglysAI.Experiments.Tests.dll (net8.0)
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    93, Skipped:     0, Total:    93, Duration: 7 s - AeglysAI.IntegrationTests.dll (net8.0)
+EXIT 0
+
+################ 06-down
+=== 06 ./dev down (2026-11-06T18:33:27Z)
+ Container aegisai-local-api-1  Stopping
+ Container aegisai-local-api-1  Stopped
+ Container aegisai-local-api-1  Removing
+ Container aegisai-local-api-1  Removed
+ Network aegisai-local_default  Removing
+ Network aegisai-local_default  Removed
+EXIT 0
